@@ -22,4 +22,4 @@ Silakan pilih menu di sebelah kiri:
 
 # Cek API Key (Global Check)
 if "GOOGLE_API_KEY" not in st.secrets:
-    st.error("⚠️ Peringatan: File .streamlit/secrets.toml belum ditemukan.")
+    st.error("⚠️ Peringatan: File .gitignore/.streamlit/secrets.toml belum ditemukan.")
