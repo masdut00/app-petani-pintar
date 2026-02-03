@@ -2,6 +2,10 @@ import streamlit as st
 from google import genai
 from PIL import Image
 
+if 'user_session' not in st.session_state or st.session_state['user_session'] is None:
+    st.warning("⚠️ Anda harus Login terlebih dahulu di halaman Home!")
+    st.stop()
+    
 # 1. KONFIGURASI HALAMAN
 st.set_page_config(page_title="Tani-Selamat 2.5", page_icon="🌱", layout="wide")
 
